@@ -1,0 +1,128 @@
+import React, { createContext, useContext } from 'react';
+import { useLocalStorage } from '../hooks/useLocalStorage';
+
+const ContentContext = createContext();
+
+export const useContent = () => {
+  const context = useContext(ContentContext);
+  if (!context) {
+    throw new Error('useContent must be used within a ContentProvider');
+  }
+  return context;
+};
+
+const initialContent = {
+  hero: {
+    title: "L'Isolation du Futur, Aujourd'hui",
+    subtitle: "Panneaux isolants biologiques à base d'aérogel de silice",
+    cta1: "Découvrir nos produits",
+    cta2: "Nous contacter"
+  },
+  about: {
+    title: "Qui Sommes-Nous ?",
+    vision: "Devenir le leader mondial des solutions d'isolation biologique, en offrant des produits innovants qui respectent l'environnement tout en garantissant une performance thermique exceptionnelle.",
+    mission: "Développer et commercialiser des panneaux isolants à base d'aérogel de silice pour réduire l'empreinte carbone des bâtiments résidentiels et industriels à travers le monde.",
+    values: "Innovation - Durabilité - Excellence - Intégrité - Collaboration",
+    timeline: [
+      { year: "2020", event: "Fondation d'EGAPURE à Tunis" },
+      { year: "2022", event: "Premier brevet aérogel déposé" },
+      { year: "2024", event: "Certification Européenne CE" },
+      { year: "2025", event: "Expansion 18 pays" }
+    ]
+  },
+  products: [
+    {
+      id: 1,
+      code: "EGA-1",
+      name: "EgaPanel Ultra",
+      tag: "Bâtiment Résidentiel",
+      description: "Panneau isolant ultra-mince pour les murs et toitures résidentielles. Performance thermique exceptionnelle avec seulement 10mm d'épaisseur.",
+      specs: ["λ = 0.015 W/m·K", "10mm = 100mm laine de verre", "Classé A1 Feu"]
+    },
+    {
+      id: 2,
+      code: "EGA-2",
+      name: "EgaPanel Pro",
+      tag: "Bâtiment Industriel",
+      description: "Solution d'isolation haute performance pour les bâtiments industriels et commerciaux. Résistance mécanique renforcée.",
+      specs: ["λ = 0.014 W/m·K", "15mm = 150mm laine de verre", "Classé A1 Feu", "Résistance compression 150 kPa"]
+    },
+    {
+      id: 3,
+      code: "EGA-3",
+      name: "EgaPanel Tech",
+      tag: "Applications Spéciales",
+      description: "Panneaux techniques pour applications cryogéniques et haute température. Stabilité thermique extrême.",
+      specs: ["λ = 0.013 W/m·K", "20mm = 200mm laine de verre", "Range: -200°C à +650°C", "Classé A1 Feu"]
+    },
+    {
+      id: 4,
+      code: "EGA-4",
+      name: "EgaPanel Eco",
+      tag: "Solution Économique",
+      description: "Panneaux isolants écologiques avec matériaux recyclés. Performance optimale pour un budget maîtrisé.",
+      specs: ["λ = 0.016 W/m·K", "12mm = 120mm laine de verre", "85% matériaux recyclés", "Classé A1 Feu"]
+    }
+  ],
+  stats: [
+    { value: "99.8%", label: "Porosité de l'Aérogel" },
+    { value: "0.015", label: "W/m·K Conductivité" },
+    { value: "18", label: "Pays Desservis" },
+    { value: "500+", label: "Projets Livrés" },
+    { value: "10 ans", label: "d'Expertise" },
+    { value: "3", label: "Brevets Déposés" }
+  ],
+  contact: {
+    address: "Zone Industrielle, Tunis, Tunisie",
+    phone: "+216 71 000 000",
+    email: "contact@egapure.tn",
+    website: "www.egapure.tn",
+    linkedin: "#",
+    facebook: "#",
+    instagram: "#"
+  },
+  technology: {
+    pillars: [
+      { icon: "⬡", title: "Structure Nanoporeux", desc: "Structure poreuse à l'échelle nanométrique capturant les molécules d'air pour une isolation thermique maximale." },
+      { icon: "⬢", title: "Procédé Sol-Gel", desc: "Procédé de fabrication avancé créant une structure en gel d'aérogel avec une précision moléculaire." },
+      { icon: "◎", title: "Hydrophobisation", desc: "Traitement de surface rendant l'aérogel résistant à l'humidité tout en préservant ses propriétés isolantes." },
+      { icon: "▣", title: "Mise en Forme", desc: "Technologie de moulage permettant de créer des panneaux aux dimensions précises pour diverses applications." }
+    ]
+  }
+};
+
+export const ContentProvider = ({ children }) => {
+  const [content, setContent] = useLocalStorage('egapure_content', initialContent);
+
+  const updateContent = (section, data) => {
+    setContent(prev => ({
+      ...prev,
+      [section]: data
+    }));
+  };
+
+  const addActivity = (action) => {
+    const activity = {
+      timestamp: new Date().toISOString(),
+      action: action
+    };
+    
+    setContent(prev => ({
+      ...prev,
+      recentActivity: [...(prev.recentActivity || []).slice(-4), activity]
+    }));
+  };
+
+  const value = {
+    content,
+    updateContent,
+    addActivity,
+    recentActivity: content.recentActivity || []
+  };
+
+  return (
+    <ContentContext.Provider value={value}>
+      {children}
+    </ContentContext.Provider>
+  );
+};
