@@ -1,13 +1,13 @@
 {
   "siteSettings": {
     "title": "EGAPURE — Isolation Biologique",
-    "description": "Solutions d'isolation biologique à base d'aérogel\n-CREATED-BY-MOSLM-1AGC",
+    "description": "Solutions d'isolation biologique à base d'aérogel\n-CREATED-BY-MOSLM-1AGC-",
     "ogImage": "/logo.png",
     "favicon": "/favicon.ico",
-    "primaryColor": "#bbd2b6",
-    "accentColor": "#b7967b",
-    "darkBg": "#251818",
-    "lightText": "#eaaeae",
+    "primaryColor": "#4A7C3F",
+    "accentColor": "#8B6343",
+    "darkBg": "#0A0A0A",
+    "lightText": "#e1bcbc",
     "subtleGray": "#2A2A2A"
   },
   "navbar": {
@@ -243,6 +243,11 @@
     ]
   },
   "recentActivity": [
+    {
+      "timestamp": "2026-04-19T17:03:22.223Z",
+      "action": "siteSettings section updated",
+      "section": "siteSettings"
+    },
     {
       "timestamp": "2026-04-19T16:56:03.954Z",
       "action": "siteSettings section updated",
