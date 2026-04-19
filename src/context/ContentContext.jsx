@@ -107,9 +107,9 @@ const initialContent = {
   ],
   contact: {
     address: "Zone Industrielle, Tunis, Tunisie",
-    phone: "+216 71 000 000",
+    phone: "+216 00 000 000",
     email: "contact@egapure.tn",
-    website: "www.egapure.tn",
+    website: "https://egapure.vercel.app/",
     linkedin: "#",
     facebook: "#",
     instagram: "#"
