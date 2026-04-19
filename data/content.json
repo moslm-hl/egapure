@@ -1,6 +1,6 @@
 {
   "siteSettings": {
-    "title": "EGAPURE — Isolation Biologique",
+    "title": "EGAPURE",
     "description": "Solutions d'isolation biologique à base d'aérogel\n-CREATED-BY-MOSLM-1AGC-",
     "ogImage": "/logo.png",
     "favicon": "/favicon.ico",
@@ -243,6 +243,11 @@
     ]
   },
   "recentActivity": [
+    {
+      "timestamp": "2026-04-19T17:03:48.328Z",
+      "action": "siteSettings section updated",
+      "section": "siteSettings"
+    },
     {
       "timestamp": "2026-04-19T17:03:22.223Z",
       "action": "siteSettings section updated",
