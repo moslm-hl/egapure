@@ -15,6 +15,7 @@ import Footer from './components/Footer';
 
 // Admin components
 import AdminLogin from './admin/AdminLogin';
+import AuthTest from './admin/AuthTest';
 import AdminLayout from './admin/AdminLayout';
 import AdminDashboard from './admin/AdminDashboard';
 import HeroEditor from './admin/editors/HeroEditor';
@@ -23,6 +24,9 @@ import ProductsEditor from './admin/editors/ProductsEditor';
 import StatsEditor from './admin/editors/StatsEditor';
 import ContactEditor from './admin/editors/ContactEditor';
 import TechnologyEditor from './admin/editors/TechnologyEditor';
+import NavbarEditor from './admin/editors/NavbarEditor';
+import FooterEditor from './admin/editors/FooterEditor';
+import SiteSettingsEditor from './admin/editors/SiteSettingsEditor';
 
 // Protected Route component
 const ProtectedRoute = ({ children }) => {
@@ -46,24 +50,6 @@ const PublicWebsite = () => (
   </div>
 );
 
-// Admin routes with protection
-const AdminRoutes = () => (
-  <ProtectedRoute>
-    <AdminLayout>
-      <Routes>
-        <Route path="/admin/dashboard" element={<AdminDashboard />} />
-        <Route path="/admin/hero" element={<HeroEditor />} />
-        <Route path="/admin/about" element={<AboutEditor />} />
-        <Route path="/admin/products" element={<ProductsEditor />} />
-        <Route path="/admin/stats" element={<StatsEditor />} />
-        <Route path="/admin/contact" element={<ContactEditor />} />
-        <Route path="/admin/technology" element={<TechnologyEditor />} />
-        <Route path="*" element={<Navigate to="/admin/dashboard" replace />} />
-      </Routes>
-    </AdminLayout>
-  </ProtectedRoute>
-);
-
 function App() {
   return (
     <AuthProvider>
@@ -74,9 +60,21 @@ function App() {
             <Route path="/" element={<PublicWebsite />} />
             
             {/* Admin routes */}
-            <Route path="/admin" element={<Navigate to="/admin/login" replace />} />
             <Route path="/admin/login" element={<AdminLogin />} />
-            <Route path="/admin/*" element={<AdminRoutes />} />
+            <Route path="/admin/test" element={<AuthTest />} />
+            <Route path="/admin" element={<ProtectedRoute><AdminLayout /></ProtectedRoute>}>
+              <Route path="dashboard" element={<AdminDashboard />} />
+              <Route path="hero" element={<HeroEditor />} />
+              <Route path="about" element={<AboutEditor />} />
+              <Route path="products" element={<ProductsEditor />} />
+              <Route path="stats" element={<StatsEditor />} />
+              <Route path="contact" element={<ContactEditor />} />
+              <Route path="technology" element={<TechnologyEditor />} />
+              <Route path="navbar" element={<NavbarEditor />} />
+              <Route path="footer" element={<FooterEditor />} />
+              <Route path="settings" element={<SiteSettingsEditor />} />
+              <Route index element={<Navigate to="dashboard" replace />} />
+            </Route>
             
             {/* Catch all - redirect to home */}
             <Route path="*" element={<Navigate to="/" replace />} />

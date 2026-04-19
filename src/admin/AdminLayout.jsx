@@ -14,16 +14,19 @@ const AdminLayout = () => {
   };
 
   const menuItems = [
-    { path: '/admin/dashboard', icon: '🏠', label: 'Tableau de bord' },
-    { path: '/admin/hero', icon: '✏️', label: 'Hero' },
-    { path: '/admin/about', icon: 'ℹ️', label: 'À Propos' },
-    { path: '/admin/products', icon: '📦', label: 'Produits' },
-    { path: '/admin/stats', icon: '📊', label: 'Statistiques' },
-    { path: '/admin/contact', icon: '📞', label: 'Contact' },
-    { path: '/admin/technology', icon: '⚙️', label: 'Technologie' },
+    { path: 'dashboard', icon: '🏠', label: 'Tableau de bord' },
+    { path: 'settings', icon: '⚙️', label: 'Paramètres' },
+    { path: 'navbar', icon: '🧭', label: 'Navbar' },
+    { path: 'hero', icon: '✏️', label: 'Hero' },
+    { path: 'about', icon: 'ℹ️', label: 'À Propos' },
+    { path: 'products', icon: '📦', label: 'Produits' },
+    { path: 'technology', icon: '🔬', label: 'Technologie' },
+    { path: 'stats', icon: '📊', label: 'Statistiques' },
+    { path: 'contact', icon: '📞', label: 'Contact' },
+    { path: 'footer', icon: '🦶', label: 'Footer' },
   ];
 
-  const isActive = (path) => location.pathname === path;
+  const isActive = (path) => location.pathname === `/admin/${path}`;
 
   return (
     <div className="adm-layout">

@@ -6,12 +6,15 @@ const AdminDashboard = () => {
   const { recentActivity } = useContent();
 
   const dashboardCards = [
+    { path: '/admin/settings', title: 'Paramètres', description: 'Configuration globale du site, couleurs et métadonnées', icon: '⚙️' },
+    { path: '/admin/navbar', title: 'Navbar', description: 'Personnaliser la barre de navigation et les liens', icon: '🧭' },
     { path: '/admin/hero', title: 'Hero', description: 'Modifier le titre, sous-titre et boutons CTA', icon: '✏️' },
     { path: '/admin/about', title: 'À Propos', description: 'Éditer vision, mission, valeurs et timeline', icon: 'ℹ️' },
     { path: '/admin/products', title: 'Produits', description: 'Gérer les produits et leurs spécifications', icon: '📦' },
+    { path: '/admin/technology', title: 'Technologie', description: 'Éditer les piliers technologiques', icon: '🔬' },
     { path: '/admin/stats', title: 'Statistiques', description: 'Mettre à jour les chiffres clés', icon: '📊' },
     { path: '/admin/contact', title: 'Contact', description: 'Modifier les informations de contact', icon: '📞' },
-    { path: '/admin/technology', title: 'Technologie', description: 'Éditer les piliers technologiques', icon: '⚙️' },
+    { path: '/admin/footer', title: 'Footer', description: 'Personnaliser le pied de page et les liens', icon: '🦶' },
   ];
 
   const formatTimestamp = (timestamp) => {

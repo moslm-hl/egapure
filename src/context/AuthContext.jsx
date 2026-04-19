@@ -21,16 +21,26 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     // Check authentication state on mount
-    const authState = sessionStorage.getItem('egapure_auth');
-    if (authState === 'true') {
-      setIsAuthenticated(true);
+    try {
+      const authState = sessionStorage.getItem('egapure_auth');
+      if (authState === 'true') {
+        setIsAuthenticated(true);
+      }
+    } catch (error) {
+      console.warn('SessionStorage not available, using memory state');
     }
   }, []);
 
   const login = (username, password) => {
+    console.log('Login attempt:', username, password);
+    
     if (username === ADMIN_CREDENTIALS.username && password === ADMIN_CREDENTIALS.password) {
       setIsAuthenticated(true);
-      sessionStorage.setItem('egapure_auth', 'true');
+      try {
+        sessionStorage.setItem('egapure_auth', 'true');
+      } catch (error) {
+        console.warn('SessionStorage not available, using memory state');
+      }
       return true;
     }
     return false;
@@ -38,7 +48,11 @@ export const AuthProvider = ({ children }) => {
 
   const logout = () => {
     setIsAuthenticated(false);
-    sessionStorage.removeItem('egapure_auth');
+    try {
+      sessionStorage.removeItem('egapure_auth');
+    } catch (error) {
+      console.warn('SessionStorage not available');
+    }
   };
 
   const value = {

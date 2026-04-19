@@ -12,11 +12,43 @@ export const useContent = () => {
 };
 
 const initialContent = {
+  // Global Site Settings
+  siteSettings: {
+    title: "EGAPURE — Isolation Biologique",
+    description: "Solutions d'isolation biologique à base d'aérogel",
+    ogImage: "/logo.png",
+    favicon: "/favicon.ico",
+    primaryColor: "#4A7C3F",
+    accentColor: "#8B6343",
+    darkBg: "#0A0A0A",
+    lightText: "#F0F0F0",
+    subtleGray: "#2A2A2A"
+  },
+  
+  // Navbar Settings
+  navbar: {
+    logoSrc: "/logo.png",
+    showAdminLink: true,
+    adminLinkText: "Admin",
+    links: [
+      { id: 1, text: "Accueil", target: "hero" },
+      { id: 2, text: "À Propos", target: "about" },
+      { id: 3, text: "Produits", target: "products" },
+      { id: 4, text: "Technologie", target: "technology" },
+      { id: 5, text: "Contact", target: "contact" }
+    ]
+  },
+
   hero: {
     title: "L'Isolation du Futur, Aujourd'hui",
     subtitle: "Panneaux isolants biologiques à base d'aérogel de silice",
+    description: "Découvrez notre technologie révolutionnaire d'isolation thermique qui allie performance écologique et efficacité énergétique.",
+    backgroundImage: "",
+    showStats: true,
     cta1: "Découvrir nos produits",
-    cta2: "Nous contacter"
+    cta2: "Nous contacter",
+    cta1Target: "products",
+    cta2Target: "contact"
   },
   about: {
     title: "Qui Sommes-Nous ?",
@@ -80,6 +112,29 @@ const initialContent = {
     linkedin: "#",
     facebook: "#",
     instagram: "#"
+  },
+  
+  // Footer Settings
+  footer: {
+    logoSrc: "/logo.png",
+    tagline: "Isolation Biologique",
+    description: "Solutions innovantes d'isolation thermique à base d'aérogel de silice pour un avenir durable.",
+    showQuickLinks: true,
+    showContactInfo: true,
+    showSocialLinks: true,
+    quickLinks: [
+      { id: 1, text: "Accueil", target: "hero" },
+      { id: 2, text: "À Propos", target: "about" },
+      { id: 3, text: "Produits", target: "products" },
+      { id: 4, text: "Technologie", target: "technology" },
+      { id: 5, text: "Contact", target: "contact" }
+    ],
+    copyrightText: "© 2025 EGAPURE. Tous droits réservés.",
+    additionalLinks: [
+      { id: 1, text: "Politique de confidentialité", url: "#" },
+      { id: 2, text: "Mentions légales", url: "#" },
+      { id: 3, text: "CGV", url: "#" }
+    ]
   },
   technology: {
     pillars: [

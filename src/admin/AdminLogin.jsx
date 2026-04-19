@@ -23,11 +23,17 @@ const AdminLogin = () => {
     setError('');
     setIsLoading(true);
 
+    console.log('Submitting login with:', { username, password: '***' });
+    
     const success = login(username, password);
     
+    console.log('Login result:', success);
+    
     if (success) {
+      console.log('Redirecting to dashboard...');
       navigate('/admin/dashboard');
     } else {
+      console.log('Login failed');
       setError('Identifiants incorrects');
     }
     
@@ -56,6 +62,33 @@ const AdminLogin = () => {
         </div>
 
         <form onSubmit={handleSubmit} className="adm-login-form">
+          {/* Debug Section - Remove in production */}
+          <div style={{ background: '#2a3441', padding: '15px', borderRadius: '6px', marginBottom: '20px', fontSize: '12px', color: '#8b9bb4' }}>
+            <strong>Debug Info:</strong><br/>
+            Authenticated: {isAuthenticated ? 'YES' : 'NO'}<br/>
+            Username: "{username}"<br/>
+            Password length: {password.length}<br/>
+            <button 
+              type="button" 
+              onClick={() => {
+                console.log('Test login with admin/egapure2025');
+                setUsername('admin');
+                setPassword('egapure2025');
+              }}
+              style={{ 
+                background: '#4A7C3F', 
+                color: 'white', 
+                border: 'none', 
+                padding: '5px 10px', 
+                borderRadius: '4px', 
+                marginTop: '10px',
+                cursor: 'pointer'
+              }}
+            >
+              Auto-fill Credentials
+            </button>
+          </div>
+
           <div className="adm-form-group">
             <label htmlFor="username">Nom d'utilisateur</label>
             <input
