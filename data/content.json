@@ -56,21 +56,9 @@
   "about": {
     "title": "Qui Sommes-Nous ?",
     "vision": "Devenir le leader mondial des solutions d'isolation biologique, en offrant des produits innovants qui respectent l'environnement tout en garantissant une performance thermique exceptionnelle.",
-    "mission": "DÃ©velopper et commercialiser des panneaux isolants Ã  base d'aÃ©rogel de silice pour rÃ©duire l'empreinte carbone des bÃ¢timents rÃ©sidentiels et industriels Ã  travers le monde.",
-    "values": "Innovation - DurabilitÃ© - Excellence - IntÃ©gritÃ© - Collaboration",
+    "mission": "Développer et commercialiser des panneaux isolants à base d'aérogel de silice pour réduire l'empreinte carbone des bâtiments résidentiels et industriels à travers le monde.",
+    "values": "Innovation - Durabilité - Excellence - Intégrité - Collaboration",
     "timeline": [
-      {
-        "year": "2020",
-        "event": "Fondation d'EGAPURE Ã  Tunis"
-      },
-      {
-        "year": "2022",
-        "event": "Premier brevet aÃ©rogel dÃ©posÃ©"
-      },
-      {
-        "year": "2024",
-        "event": "Certification EuropÃ©enne CE"
-      },
       {
         "year": "2025",
         "event": "Expansion 18 pays"
@@ -243,6 +231,11 @@
     ]
   },
   "recentActivity": [
+    {
+      "timestamp": "2026-04-19T17:04:13.804Z",
+      "action": "about section updated",
+      "section": "about"
+    },
     {
       "timestamp": "2026-04-19T17:03:48.328Z",
       "action": "siteSettings section updated",
