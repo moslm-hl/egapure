@@ -1,4 +1,4 @@
-import React, { createContext, useContext } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 import { useLocalStorage } from '../hooks/useLocalStorage';
 
 const ContentContext = createContext();
@@ -147,13 +147,95 @@ const initialContent = {
 };
 
 export const ContentProvider = ({ children }) => {
-  const [content, setContent] = useLocalStorage('egapure_content', initialContent);
+  const [content, setContent] = useState(initialContent);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [saving, setSaving] = useState(false);
+  const [saveStatus, setSaveStatus] = useState(null); // { type: 'success'|'error', message: string }
+  const [localContent, setLocalContent] = useLocalStorage('egapure_content_local', initialContent);
 
-  const updateContent = (section, data) => {
-    setContent(prev => ({
-      ...prev,
-      [section]: data
-    }));
+  // Fetch content from API on mount
+  useEffect(() => {
+    const fetchContent = async () => {
+      try {
+        setLoading(true);
+        const response = await fetch('/api/content');
+        if (response.ok) {
+          const data = await response.json();
+          setContent(data);
+          setLocalContent(data); // Sync with localStorage as backup
+        } else {
+          // Fallback to localStorage if API fails
+          console.warn('API not available, using localStorage');
+          setContent(localContent);
+        }
+      } catch (error) {
+        console.warn('Failed to fetch content from API:', error);
+        // Fallback to localStorage
+        setContent(localContent);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchContent();
+  }, []);
+
+  const updateContent = async (section, data) => {
+    try {
+      setSaving(true);
+      setSaveStatus(null);
+
+      // Update local state immediately for responsive UI
+      setContent(prev => ({
+        ...prev,
+        [section]: data
+      }));
+
+      // Try to update via API (GitHub)
+      const response = await fetch('/api/content/update', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ section, data }),
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        console.log('Content updated and committed to GitHub:', result.message);
+
+        // Update localStorage backup
+        setContent(current => {
+          setLocalContent(current);
+          return current;
+        });
+
+        setSaveStatus({
+          type: 'success',
+          message: 'Changes saved and deployed! All visitors will see the updates.'
+        });
+
+        // Clear success message after 5 seconds
+        setTimeout(() => setSaveStatus(null), 5000);
+
+      } else {
+        const errorData = await response.json();
+        console.error('Failed to update content via API:', errorData);
+        setSaveStatus({
+          type: 'error',
+          message: `Failed to save changes: ${errorData.error || 'Unknown error'}`
+        });
+      }
+    } catch (error) {
+      console.error('Error updating content:', error);
+      setSaveStatus({
+        type: 'error',
+        message: `Failed to save changes: ${error.message}`
+      });
+    } finally {
+      setSaving(false);
+    }
   };
 
   const addActivity = (action) => {
@@ -161,7 +243,7 @@ export const ContentProvider = ({ children }) => {
       timestamp: new Date().toISOString(),
       action: action
     };
-    
+
     setContent(prev => ({
       ...prev,
       recentActivity: [...(prev.recentActivity || []).slice(-4), activity]
@@ -172,7 +254,11 @@ export const ContentProvider = ({ children }) => {
     content,
     updateContent,
     addActivity,
-    recentActivity: content.recentActivity || []
+    recentActivity: content.recentActivity || [],
+    loading,
+    error,
+    saving,
+    saveStatus
   };
 
   return (

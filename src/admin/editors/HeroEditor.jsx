@@ -2,10 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useContent } from '../../context/ContentContext';
 
 const HeroEditor = () => {
-  const { content, updateContent, addActivity } = useContent();
+  const { content, updateContent, addActivity, saving, saveStatus } = useContent();
   const [formData, setFormData] = useState(content.hero);
   const [originalData, setOriginalData] = useState(content.hero);
-  const [showToast, setShowToast] = useState(false);
 
   useEffect(() => {
     setFormData(content.hero);
@@ -23,8 +22,6 @@ const HeroEditor = () => {
     updateContent('hero', formData);
     addActivity('Hero section updated');
     setOriginalData(formData);
-    setShowToast(true);
-    setTimeout(() => setShowToast(false), 3000);
   };
 
   const handleCancel = () => {
@@ -85,13 +82,27 @@ const HeroEditor = () => {
           </div>
 
           <div className="adm-form-actions">
-            <button onClick={handleSave} className="adm-btn adm-btn-primary">
-              Enregistrer
+            <button
+              onClick={handleSave}
+              disabled={saving}
+              className="adm-btn adm-btn-primary"
+            >
+              {saving ? 'Enregistrement...' : 'Enregistrer'}
             </button>
-            <button onClick={handleCancel} className="adm-btn adm-btn-secondary">
+            <button
+              onClick={handleCancel}
+              disabled={saving}
+              className="adm-btn adm-btn-secondary"
+            >
               Annuler
             </button>
           </div>
+
+          {saveStatus && (
+            <div className={`adm-status-message ${saveStatus.type === 'success' ? 'adm-status-success' : 'adm-status-error'}`}>
+              {saveStatus.message}
+            </div>
+          )}
         </div>
 
         <div className="adm-editor-preview">
