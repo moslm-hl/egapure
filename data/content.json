@@ -1,7 +1,7 @@
 {
   "siteSettings": {
     "title": "EGAPURE — Isolation Biologique",
-    "description": "Solutions d'isolation biologique à base d'aérogel",
+    "description": "Solutions d'isolation biologique à base d'aérogel\n\n-CREATED-BY-MOSLM-1AGC",
     "ogImage": "/logo.png",
     "favicon": "/favicon.ico",
     "primaryColor": "#4A7C3F",
@@ -15,20 +15,40 @@
     "showAdminLink": true,
     "adminLinkText": "Admin",
     "links": [
-      { "id": 1, "text": "Accueil", "target": "hero" },
-      { "id": 2, "text": "À Propos", "target": "about" },
-      { "id": 3, "text": "Produits", "target": "products" },
-      { "id": 4, "text": "Technologie", "target": "technology" },
-      { "id": 5, "text": "Contact", "target": "contact" }
+      {
+        "id": 1,
+        "text": "Accueil",
+        "target": "hero"
+      },
+      {
+        "id": 2,
+        "text": "Ã Propos",
+        "target": "about"
+      },
+      {
+        "id": 3,
+        "text": "Produits",
+        "target": "products"
+      },
+      {
+        "id": 4,
+        "text": "Technologie",
+        "target": "technology"
+      },
+      {
+        "id": 5,
+        "text": "Contact",
+        "target": "contact"
+      }
     ]
   },
   "hero": {
     "title": "L'Isolation du Futur, Aujourd'hui",
-    "subtitle": "Panneaux isolants biologiques à base d'aérogel de silice",
-    "description": "Découvrez notre technologie révolutionnaire d'isolation thermique qui allie performance écologique et efficacité énergétique.",
+    "subtitle": "Panneaux isolants biologiques Ã  base d'aÃ©rogel de silice",
+    "description": "DÃ©couvrez notre technologie rÃ©volutionnaire d'isolation thermique qui allie performance Ã©cologique et efficacitÃ© Ã©nergÃ©tique.",
     "backgroundImage": "",
     "showStats": true,
-    "cta1": "Découvrir nos produits",
+    "cta1": "DÃ©couvrir nos produits",
     "cta2": "Nous contacter",
     "cta1Target": "products",
     "cta2Target": "contact"
@@ -36,13 +56,25 @@
   "about": {
     "title": "Qui Sommes-Nous ?",
     "vision": "Devenir le leader mondial des solutions d'isolation biologique, en offrant des produits innovants qui respectent l'environnement tout en garantissant une performance thermique exceptionnelle.",
-    "mission": "Développer et commercialiser des panneaux isolants à base d'aérogel de silice pour réduire l'empreinte carbone des bâtiments résidentiels et industriels à travers le monde.",
-    "values": "Innovation - Durabilité - Excellence - Intégrité - Collaboration",
+    "mission": "DÃ©velopper et commercialiser des panneaux isolants Ã  base d'aÃ©rogel de silice pour rÃ©duire l'empreinte carbone des bÃ¢timents rÃ©sidentiels et industriels Ã  travers le monde.",
+    "values": "Innovation - DurabilitÃ© - Excellence - IntÃ©gritÃ© - Collaboration",
     "timeline": [
-      { "year": "2020", "event": "Fondation d'EGAPURE à Tunis" },
-      { "year": "2022", "event": "Premier brevet aérogel déposé" },
-      { "year": "2024", "event": "Certification Européenne CE" },
-      { "year": "2025", "event": "Expansion 18 pays" }
+      {
+        "year": "2020",
+        "event": "Fondation d'EGAPURE Ã  Tunis"
+      },
+      {
+        "year": "2022",
+        "event": "Premier brevet aÃ©rogel dÃ©posÃ©"
+      },
+      {
+        "year": "2024",
+        "event": "Certification EuropÃ©enne CE"
+      },
+      {
+        "year": "2025",
+        "event": "Expansion 18 pays"
+      }
     ]
   },
   "products": [
@@ -50,42 +82,79 @@
       "id": 1,
       "code": "EGA-1",
       "name": "EgaPanel Ultra",
-      "tag": "Bâtiment Résidentiel",
-      "description": "Panneau isolant ultra-mince pour les murs et toitures résidentielles. Performance thermique exceptionnelle avec seulement 10mm d'épaisseur.",
-      "specs": ["λ = 0.015 W/m·K", "10mm = 100mm laine de verre", "Classé A1 Feu"]
+      "tag": "BÃ¢timent RÃ©sidentiel",
+      "description": "Panneau isolant ultra-mince pour les murs et toitures rÃ©sidentielles. Performance thermique exceptionnelle avec seulement 10mm d'Ã©paisseur.",
+      "specs": [
+        "Î» = 0.015 W/mÂ·K",
+        "10mm = 100mm laine de verre",
+        "ClassÃ© A1 Feu"
+      ]
     },
     {
       "id": 2,
       "code": "EGA-2",
       "name": "EgaPanel Pro",
-      "tag": "Bâtiment Industriel",
-      "description": "Solution d'isolation haute performance pour les bâtiments industriels et commerciaux. Résistance mécanique renforcée.",
-      "specs": ["λ = 0.014 W/m·K", "15mm = 150mm laine de verre", "Classé A1 Feu", "Résistance compression 150 kPa"]
+      "tag": "BÃ¢timent Industriel",
+      "description": "Solution d'isolation haute performance pour les bÃ¢timents industriels et commerciaux. RÃ©sistance mÃ©canique renforcÃ©e.",
+      "specs": [
+        "Î» = 0.014 W/mÂ·K",
+        "15mm = 150mm laine de verre",
+        "ClassÃ© A1 Feu",
+        "RÃ©sistance compression 150 kPa"
+      ]
     },
     {
       "id": 3,
       "code": "EGA-3",
       "name": "EgaPanel Tech",
-      "tag": "Applications Spéciales",
-      "description": "Panneaux techniques pour applications cryogéniques et haute température. Stabilité thermique extrême.",
-      "specs": ["λ = 0.013 W/m·K", "20mm = 200mm laine de verre", "Range: -200°C à +650°C", "Classé A1 Feu"]
+      "tag": "Applications SpÃ©ciales",
+      "description": "Panneaux techniques pour applications cryogÃ©niques et haute tempÃ©rature. StabilitÃ© thermique extrÃªme.",
+      "specs": [
+        "Î» = 0.013 W/mÂ·K",
+        "20mm = 200mm laine de verre",
+        "Range: -200Â°C Ã  +650Â°C",
+        "ClassÃ© A1 Feu"
+      ]
     },
     {
       "id": 4,
       "code": "EGA-4",
       "name": "EgaPanel Eco",
-      "tag": "Solution Économique",
-      "description": "Panneaux isolants écologiques avec matériaux recyclés. Performance optimale pour un budget maîtrisé.",
-      "specs": ["λ = 0.016 W/m·K", "12mm = 120mm laine de verre", "85% matériaux recyclés", "Classé A1 Feu"]
+      "tag": "Solution Ãconomique",
+      "description": "Panneaux isolants Ã©cologiques avec matÃ©riaux recyclÃ©s. Performance optimale pour un budget maÃ®trisÃ©.",
+      "specs": [
+        "Î» = 0.016 W/mÂ·K",
+        "12mm = 120mm laine de verre",
+        "85% matÃ©riaux recyclÃ©s",
+        "ClassÃ© A1 Feu"
+      ]
     }
   ],
   "stats": [
-    { "value": "99.8%", "label": "Porosité de l'Aérogel" },
-    { "value": "0.015", "label": "W/m·K Conductivité" },
-    { "value": "18", "label": "Pays Desservis" },
-    { "value": "500+", "label": "Projets Livrés" },
-    { "value": "10 ans", "label": "d'Expertise" },
-    { "value": "3", "label": "Brevets Déposés" }
+    {
+      "value": "99.8%",
+      "label": "PorositÃ© de l'AÃ©rogel"
+    },
+    {
+      "value": "0.015",
+      "label": "W/mÂ·K ConductivitÃ©"
+    },
+    {
+      "value": "18",
+      "label": "Pays Desservis"
+    },
+    {
+      "value": "500+",
+      "label": "Projets LivrÃ©s"
+    },
+    {
+      "value": "10 ans",
+      "label": "d'Expertise"
+    },
+    {
+      "value": "3",
+      "label": "Brevets DÃ©posÃ©s"
+    }
   ],
   "contact": {
     "address": "Zone Industrielle, Tunis, Tunisie",
@@ -99,30 +168,85 @@
   "footer": {
     "logoSrc": "/logo.png",
     "tagline": "Isolation Biologique",
-    "description": "Solutions innovantes d'isolation thermique à base d'aérogel de silice pour un avenir durable.",
+    "description": "Solutions innovantes d'isolation thermique Ã  base d'aÃ©rogel de silice pour un avenir durable.",
     "showQuickLinks": true,
     "showContactInfo": true,
     "showSocialLinks": true,
     "quickLinks": [
-      { "id": 1, "text": "Accueil", "target": "hero" },
-      { "id": 2, "text": "À Propos", "target": "about" },
-      { "id": 3, "text": "Produits", "target": "products" },
-      { "id": 4, "text": "Technologie", "target": "technology" },
-      { "id": 5, "text": "Contact", "target": "contact" }
+      {
+        "id": 1,
+        "text": "Accueil",
+        "target": "hero"
+      },
+      {
+        "id": 2,
+        "text": "Ã Propos",
+        "target": "about"
+      },
+      {
+        "id": 3,
+        "text": "Produits",
+        "target": "products"
+      },
+      {
+        "id": 4,
+        "text": "Technologie",
+        "target": "technology"
+      },
+      {
+        "id": 5,
+        "text": "Contact",
+        "target": "contact"
+      }
     ],
-    "copyrightText": "© 2025 EGAPURE. Tous droits réservés.",
+    "copyrightText": "Â© 2025 EGAPURE. Tous droits rÃ©servÃ©s.",
     "additionalLinks": [
-      { "id": 1, "text": "Politique de confidentialité", "url": "#" },
-      { "id": 2, "text": "Mentions légales", "url": "#" },
-      { "id": 3, "text": "CGV", "url": "#" }
+      {
+        "id": 1,
+        "text": "Politique de confidentialitÃ©",
+        "url": "#"
+      },
+      {
+        "id": 2,
+        "text": "Mentions lÃ©gales",
+        "url": "#"
+      },
+      {
+        "id": 3,
+        "text": "CGV",
+        "url": "#"
+      }
     ]
   },
   "technology": {
     "pillars": [
-      { "icon": "⬡", "title": "Structure Nanoporeux", "desc": "Structure poreuse à l'échelle nanométrique capturant les molécules d'air pour une isolation thermique maximale." },
-      { "icon": "⬢", "title": "Procédé Sol-Gel", "desc": "Procédé de fabrication avancé créant une structure en gel d'aérogel avec une précision moléculaire." },
-      { "icon": "◎", "title": "Hydrophobisation", "desc": "Traitement de surface rendant l'aérogel résistant à l'humidité tout en préservant ses propriétés isolantes." },
-      { "icon": "▣", "title": "Mise en Forme", "desc": "Technologie de moulage permettant de créer des panneaux aux dimensions précises pour diverses applications." }
+      {
+        "icon": "â¬¡",
+        "title": "Structure Nanoporeux",
+        "desc": "Structure poreuse Ã  l'Ã©chelle nanomÃ©trique capturant les molÃ©cules d'air pour une isolation thermique maximale."
+      },
+      {
+        "icon": "â¬¢",
+        "title": "ProcÃ©dÃ© Sol-Gel",
+        "desc": "ProcÃ©dÃ© de fabrication avancÃ© crÃ©ant une structure en gel d'aÃ©rogel avec une prÃ©cision molÃ©culaire."
+      },
+      {
+        "icon": "â",
+        "title": "Hydrophobisation",
+        "desc": "Traitement de surface rendant l'aÃ©rogel rÃ©sistant Ã  l'humiditÃ© tout en prÃ©servant ses propriÃ©tÃ©s isolantes."
+      },
+      {
+        "icon": "â£",
+        "title": "Mise en Forme",
+        "desc": "Technologie de moulage permettant de crÃ©er des panneaux aux dimensions prÃ©cises pour diverses applications."
+      }
     ]
-  }
+  },
+  "recentActivity": [
+    {
+      "timestamp": "2026-04-19T16:41:37.330Z",
+      "action": "siteSettings section updated",
+      "section": "siteSettings"
+    }
+  ]
 }
