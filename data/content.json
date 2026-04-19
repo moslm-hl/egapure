@@ -70,51 +70,25 @@
       "id": 1,
       "code": "EGA-1",
       "name": "EgaPanel Ultra",
-      "tag": "BÃ¢timent RÃ©sidentiel",
-      "description": "Panneau isolant ultra-mince pour les murs et toitures rÃ©sidentielles. Performance thermique exceptionnelle avec seulement 10mm d'Ã©paisseur.",
+      "tag": "Bâtiment Résidentiel",
+      "description": "Panneau isolant ultra-mince pour les murs et toitures résidentielles. Performance thermique exceptionnelle avec seulement 10mm d'épaisseur.",
       "specs": [
-        "Î» = 0.015 W/mÂ·K",
+        "λ = 0.015 W/m·K",
         "10mm = 100mm laine de verre",
-        "ClassÃ© A1 Feu"
+        "Classé A1 Feu"
       ]
     },
     {
       "id": 2,
       "code": "EGA-2",
       "name": "EgaPanel Pro",
-      "tag": "BÃ¢timent Industriel",
-      "description": "Solution d'isolation haute performance pour les bÃ¢timents industriels et commerciaux. RÃ©sistance mÃ©canique renforcÃ©e.",
+      "tag": "Bâtiment Industriel",
+      "description": "Solution d'isolation haute performance pour les bâtiments industriels et commerciaux. Résistance mécanique renforcée.",
       "specs": [
-        "Î» = 0.014 W/mÂ·K",
+        "λ = 0.014 W/m·K",
         "15mm = 150mm laine de verre",
-        "ClassÃ© A1 Feu",
-        "RÃ©sistance compression 150 kPa"
-      ]
-    },
-    {
-      "id": 3,
-      "code": "EGA-3",
-      "name": "EgaPanel Tech",
-      "tag": "Applications SpÃ©ciales",
-      "description": "Panneaux techniques pour applications cryogÃ©niques et haute tempÃ©rature. StabilitÃ© thermique extrÃªme.",
-      "specs": [
-        "Î» = 0.013 W/mÂ·K",
-        "20mm = 200mm laine de verre",
-        "Range: -200Â°C Ã  +650Â°C",
-        "ClassÃ© A1 Feu"
-      ]
-    },
-    {
-      "id": 4,
-      "code": "EGA-4",
-      "name": "EgaPanel Eco",
-      "tag": "Solution Ãconomique",
-      "description": "Panneaux isolants Ã©cologiques avec matÃ©riaux recyclÃ©s. Performance optimale pour un budget maÃ®trisÃ©.",
-      "specs": [
-        "Î» = 0.016 W/mÂ·K",
-        "12mm = 120mm laine de verre",
-        "85% matÃ©riaux recyclÃ©s",
-        "ClassÃ© A1 Feu"
+        "Classé A1 Feu",
+        "Résistance compression 150 kPa"
       ]
     }
   ],
@@ -231,6 +205,11 @@
     ]
   },
   "recentActivity": [
+    {
+      "timestamp": "2026-04-19T17:04:52.579Z",
+      "action": "products section updated",
+      "section": "products"
+    },
     {
       "timestamp": "2026-04-19T17:04:13.804Z",
       "action": "about section updated",
