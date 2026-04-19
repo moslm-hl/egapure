@@ -16,6 +16,7 @@ const initialContent = {
   siteSettings: {
     title: "EGAPURE — Isolation Biologique",
     description: "Solutions d'isolation biologique à base d'aérogel",
+    creator: "CREATED-BY-MOSLM-1AGC",
     ogImage: "/logo.png",
     favicon: "/favicon.ico",
     primaryColor: "#4A7C3F",
