@@ -32,7 +32,6 @@ const Footer = () => {
             <p className="ega-footer-tagline">Isolation Biologique</p>
             <p className="ega-footer-description">
               Solutions innovantes d'isolation thermique à base d'aérogel de silice pour un avenir durable.
-            </p>
             <p className="ega-footer-description">CREATED-BY-MOSLM-1AGC</p>
             </p>
           </div>
