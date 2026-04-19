@@ -33,8 +33,7 @@ const Footer = () => {
             <p className="ega-footer-description">
               Solutions innovantes d'isolation thermique à base d'aérogel de silice pour un avenir durable.
             </p>
-            <p style={{ color: '#8B9BB4', fontSize: '0.8rem', marginTop: '8px' }}>
-              Created by: {content.siteSettings.creator}
+            <p>CREATED-BY-MOSLM-1AGC</p>
             </p>
           </div>
 
