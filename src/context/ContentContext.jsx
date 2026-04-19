@@ -154,23 +154,25 @@ export const ContentProvider = ({ children }) => {
   const [saveStatus, setSaveStatus] = useState(null); // { type: 'success'|'error', message: string }
   const [localContent, setLocalContent] = useLocalStorage('egapure_content_local', initialContent);
 
-  // Fetch content from API on mount
+  // Fetch content from static file on mount
   useEffect(() => {
     const fetchContent = async () => {
       try {
         setLoading(true);
-        const response = await fetch('/api/content');
+        setError(null);
+        // Try to fetch from static content file
+        const response = await fetch('/data/content.json');
         if (response.ok) {
           const data = await response.json();
           setContent(data);
           setLocalContent(data); // Sync with localStorage as backup
         } else {
-          // Fallback to localStorage if API fails
-          console.warn('API not available, using localStorage');
+          // Fallback to localStorage if file not found
+          console.warn('Static content file not found, using localStorage');
           setContent(localContent);
         }
       } catch (error) {
-        console.warn('Failed to fetch content from API:', error);
+        console.warn('Failed to fetch content from static file:', error);
         // Fallback to localStorage
         setContent(localContent);
       } finally {

@@ -1,12 +1,5 @@
 // API route to get content data
-// This will serve as the backend storage for the website content
-
-const fs = require('fs');
-const path = require('path');
-
-const contentFilePath = path.join(process.cwd(), 'data', 'content.json');
-
-// Default content (same as in ContentContext)
+// Returns default content - actual content is loaded from data/content.json in the frontend
 const defaultContent = {
   siteSettings: {
     title: "EGAPURE — Isolation Biologique",
@@ -139,24 +132,13 @@ const defaultContent = {
 export default async function handler(req, res) {
   if (req.method === 'GET') {
     try {
-      // Try to read from file
-      if (fs.existsSync(contentFilePath)) {
-        const fileContent = fs.readFileSync(contentFilePath, 'utf8');
-        const content = JSON.parse(fileContent);
-        res.status(200).json(content);
-      } else {
-        // Create data directory if it doesn't exist
-        const dataDir = path.join(process.cwd(), 'data');
-        if (!fs.existsSync(dataDir)) {
-          fs.mkdirSync(dataDir, { recursive: true });
-        }
-        // Write default content to file
-        fs.writeFileSync(contentFilePath, JSON.stringify(defaultContent, null, 2));
-        res.status(200).json(defaultContent);
-      }
+      // Return default content
+      // In production on Vercel, the frontend will display content from data/content.json in the repo
+      // which is served as static files
+      res.status(200).json(defaultContent);
     } catch (error) {
       console.error('Error reading content:', error);
-      res.status(500).json({ error: 'Failed to read content' });
+      res.status(200).json(defaultContent); // Fallback to default
     }
   } else {
     res.setHeader('Allow', ['GET']);
