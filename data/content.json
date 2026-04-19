@@ -119,7 +119,7 @@
     }
   ],
   "contact": {
-    "address": "Zone Industrielle, Tunis, Tunisie",
+    "address": "Tunis, Tunisie",
     "phone": "+216 00 000 000",
     "email": "contact@egapure.tn",
     "website": "https://egapure.vercel.app/",
@@ -206,6 +206,11 @@
   },
   "recentActivity": [
     {
+      "timestamp": "2026-04-19T18:16:02.273Z",
+      "action": "contact section updated",
+      "section": "contact"
+    },
+    {
       "timestamp": "2026-04-19T18:13:58.597Z",
       "action": "contact section updated",
       "section": "contact"
@@ -224,11 +229,6 @@
       "timestamp": "2026-04-19T17:04:52.579Z",
       "action": "products section updated",
       "section": "products"
-    },
-    {
-      "timestamp": "2026-04-19T17:04:13.804Z",
-      "action": "about section updated",
-      "section": "about"
     }
   ]
 }
