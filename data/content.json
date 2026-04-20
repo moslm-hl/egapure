@@ -90,6 +90,16 @@
         "Classé A1 Feu",
         "Résistance compression 150 kPa"
       ]
+    },
+    {
+      "id": 3,
+      "code": "1703",
+      "name": "PUREPURE",
+      "tag": "",
+      "description": "",
+      "specs": [
+        ""
+      ]
     }
   ],
   "stats": [
@@ -206,6 +216,11 @@
   },
   "recentActivity": [
     {
+      "timestamp": "2026-04-20T12:48:41.289Z",
+      "action": "products section updated",
+      "section": "products"
+    },
+    {
       "timestamp": "2026-04-19T18:16:02.273Z",
       "action": "contact section updated",
       "section": "contact"
@@ -222,11 +237,6 @@
     },
     {
       "timestamp": "2026-04-19T17:05:30.531Z",
-      "action": "products section updated",
-      "section": "products"
-    },
-    {
-      "timestamp": "2026-04-19T17:04:52.579Z",
       "action": "products section updated",
       "section": "products"
     }
