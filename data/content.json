@@ -100,6 +100,16 @@
       "specs": [
         ""
       ]
+    },
+    {
+      "id": 4,
+      "code": "BLABLA",
+      "name": "FFFFFFFFFFF",
+      "tag": "",
+      "description": "",
+      "specs": [
+        ""
+      ]
     }
   ],
   "stats": [
@@ -216,6 +226,11 @@
   },
   "recentActivity": [
     {
+      "timestamp": "2026-04-21T13:30:19.824Z",
+      "action": "products section updated",
+      "section": "products"
+    },
+    {
       "timestamp": "2026-04-20T12:48:41.289Z",
       "action": "products section updated",
       "section": "products"
@@ -232,11 +247,6 @@
     },
     {
       "timestamp": "2026-04-19T17:06:02.150Z",
-      "action": "products section updated",
-      "section": "products"
-    },
-    {
-      "timestamp": "2026-04-19T17:05:30.531Z",
       "action": "products section updated",
       "section": "products"
     }
