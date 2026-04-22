@@ -77,29 +77,6 @@
         "10mm = 100mm laine de verre",
         "Classé A1 Feu"
       ]
-    },
-    {
-      "id": 2,
-      "code": "EGA-2",
-      "name": "EgaPanel Pro",
-      "tag": "Bâtiment Industriel",
-      "description": "Solution d'isolation haute performance pour les bâtiments industriels et commerciaux. Résistance mécanique renforcée.",
-      "specs": [
-        "λ = 0.014 W/m·K",
-        "15mm = 150mm laine de verre",
-        "Classé A1 Feu",
-        "Résistance compression 150 kPa"
-      ]
-    },
-    {
-      "id": 3,
-      "code": "1703",
-      "name": "PUREPURE",
-      "tag": "",
-      "description": "",
-      "specs": [
-        ""
-      ]
     }
   ],
   "stats": [
@@ -216,6 +193,11 @@
   },
   "recentActivity": [
     {
+      "timestamp": "2026-04-22T13:25:54.450Z",
+      "action": "products section updated",
+      "section": "products"
+    },
+    {
       "timestamp": "2026-04-21T13:31:16.626Z",
       "action": "products section updated",
       "section": "products"
@@ -234,11 +216,6 @@
       "timestamp": "2026-04-20T12:48:41.289Z",
       "action": "products section updated",
       "section": "products"
-    },
-    {
-      "timestamp": "2026-04-19T18:16:02.273Z",
-      "action": "contact section updated",
-      "section": "contact"
     }
   ]
 }
