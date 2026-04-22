@@ -118,7 +118,7 @@
   "footer": {
     "logoSrc": "/logo.png",
     "tagline": "Isolation Biologique",
-    "description": "Solutions innovantes d'isolation thermique Ã  base d'aÃ©rogel de silice pour un avenir durable.",
+    "description": "Solutions innovantes d'isolation thermique à base d'aérogel de silice pour un avenir durable.\n-CREATED-BY-MOSLM-",
     "showQuickLinks": true,
     "showContactInfo": true,
     "showSocialLinks": true,
@@ -130,7 +130,7 @@
       },
       {
         "id": 2,
-        "text": "Ã Propos",
+        "text": "À Propos",
         "target": "about"
       },
       {
@@ -149,16 +149,16 @@
         "target": "contact"
       }
     ],
-    "copyrightText": "Â© 2025 EGAPURE. Tous droits rÃ©servÃ©s.",
+    "copyrightText": "© 2025 EGAPURE. Tous droits réservés.",
     "additionalLinks": [
       {
         "id": 1,
-        "text": "Politique de confidentialitÃ©",
+        "text": "Politique de confidentialité",
         "url": "#"
       },
       {
         "id": 2,
-        "text": "Mentions lÃ©gales",
+        "text": "Mentions légales",
         "url": "#"
       },
       {
@@ -194,6 +194,11 @@
   },
   "recentActivity": [
     {
+      "timestamp": "2026-04-22T15:33:13.725Z",
+      "action": "footer section updated",
+      "section": "footer"
+    },
+    {
       "timestamp": "2026-04-22T15:32:01.903Z",
       "action": "contact section updated",
       "section": "contact"
@@ -212,11 +217,6 @@
       "timestamp": "2026-04-22T15:28:55.457Z",
       "action": "about section updated",
       "section": "about"
-    },
-    {
-      "timestamp": "2026-04-22T15:28:34.891Z",
-      "action": "products section updated",
-      "section": "products"
     }
   ]
 }
