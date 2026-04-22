@@ -172,7 +172,7 @@
       {
         "icon": "⬡",
         "title": "Structure Nanoporeux",
-        "desc": "Structure poreuse à l'échelle nanométrique capturant les molécules d'air pour une isolation thermique maximale."
+        "desc": "Structure poreuse à l'échelle nanométrique capturant les molécules d'air pour une isolation thermique et acoustique maximale."
       },
       {
         "icon": "⬢",
@@ -193,6 +193,11 @@
   },
   "recentActivity": [
     {
+      "timestamp": "2026-04-22T13:36:33.004Z",
+      "action": "technology section updated",
+      "section": "technology"
+    },
+    {
       "timestamp": "2026-04-22T13:33:45.735Z",
       "action": "contact section updated",
       "section": "contact"
@@ -211,11 +216,6 @@
       "timestamp": "2026-04-22T13:31:34.222Z",
       "action": "technology section updated",
       "section": "technology"
-    },
-    {
-      "timestamp": "2026-04-22T13:30:53.623Z",
-      "action": "about section updated",
-      "section": "about"
     }
   ]
 }
