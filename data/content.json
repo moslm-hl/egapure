@@ -193,6 +193,11 @@
   },
   "recentActivity": [
     {
+      "timestamp": "2026-04-22T13:33:45.735Z",
+      "action": "contact section updated",
+      "section": "contact"
+    },
+    {
       "timestamp": "2026-04-22T13:32:38.930Z",
       "action": "stats section updated",
       "section": "stats"
@@ -211,11 +216,6 @@
       "timestamp": "2026-04-22T13:30:53.623Z",
       "action": "about section updated",
       "section": "about"
-    },
-    {
-      "timestamp": "2026-04-22T13:29:04.872Z",
-      "action": "contact section updated",
-      "section": "contact"
     }
   ]
 }
