@@ -45,13 +45,13 @@ const Hero = () => {
               </div>
             </div>
             <div className="ega-hero-buttons">
-              <button 
+              <button
                 onClick={() => scrollToSection('products')}
                 className="ega-btn ega-btn-primary"
               >
                 {content.hero.cta1}
               </button>
-              <button 
+              <button
                 onClick={() => scrollToSection('contact')}
                 className="ega-btn ega-btn-secondary"
               >
@@ -60,18 +60,10 @@ const Hero = () => {
             </div>
           </div>
           <div className="ega-hero-image">
-            <img 
-              src="/product.png" 
-              alt="Panneau EGAPURE"
-              onError={(e) => {
-                e.target.style.display = 'none';
-                e.target.nextSibling.style.display = 'flex';
-              }}
+            <img
+              src="/thepic.png"
+              alt="EGAPURE"
             />
-            <div className="ega-hero-image-placeholder" style={{ display: 'none' }}>
-              <div className="ega-placeholder-icon">🏗️</div>
-              <p>Panneau EGAPURE</p>
-            </div>
           </div>
         </div>
       </div>
