@@ -170,28 +170,33 @@
   "technology": {
     "pillars": [
       {
-        "icon": "â¬¡",
+        "icon": "⬡",
         "title": "Structure Nanoporeux",
-        "desc": "Structure poreuse Ã  l'Ã©chelle nanomÃ©trique capturant les molÃ©cules d'air pour une isolation thermique maximale."
+        "desc": "Structure poreuse à l'échelle nanométrique capturant les molécules d'air pour une isolation thermique maximale."
       },
       {
-        "icon": "â¬¢",
-        "title": "ProcÃ©dÃ© Sol-Gel",
-        "desc": "ProcÃ©dÃ© de fabrication avancÃ© crÃ©ant une structure en gel d'aÃ©rogel avec une prÃ©cision molÃ©culaire."
+        "icon": "⬢",
+        "title": "Procédé Sol-Gel",
+        "desc": "Procédé de fabrication avancé créant une structure en gel d'aérogel avec une précision moléculaire."
       },
       {
-        "icon": "â",
+        "icon": "◎",
         "title": "Hydrophobisation",
-        "desc": "Traitement de surface rendant l'aÃ©rogel rÃ©sistant Ã  l'humiditÃ© tout en prÃ©servant ses propriÃ©tÃ©s isolantes."
+        "desc": "Traitement de surface rendant l'aérogel résistant à l'humidité tout en préservant ses propriétés isolantes."
       },
       {
-        "icon": "â£",
+        "icon": "▣",
         "title": "Mise en Forme",
-        "desc": "Technologie de moulage permettant de crÃ©er des panneaux aux dimensions prÃ©cises pour diverses applications."
+        "desc": "Technologie de moulage permettant de créer des panneaux aux dimensions précises pour diverses applications."
       }
     ]
   },
   "recentActivity": [
+    {
+      "timestamp": "2026-04-22T13:31:34.222Z",
+      "action": "technology section updated",
+      "section": "technology"
+    },
     {
       "timestamp": "2026-04-22T13:30:53.623Z",
       "action": "about section updated",
@@ -211,11 +216,6 @@
       "timestamp": "2026-04-22T13:28:47.422Z",
       "action": "contact section updated",
       "section": "contact"
-    },
-    {
-      "timestamp": "2026-04-22T13:25:54.450Z",
-      "action": "products section updated",
-      "section": "products"
     }
   ]
 }
