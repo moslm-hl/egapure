@@ -111,8 +111,8 @@
     "email": "contact@egapure.tn",
     "website": "https://egapure.vercel.app/",
     "linkedin": "#",
-    "facebook": "#",
-    "instagram": "#"
+    "facebook": "https://www.facebook.com/profile.php?id=61565275798769&locale=fr_FR",
+    "instagram": "https://www.instagram.com/egapure.insulations?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
   },
   "footer": {
     "logoSrc": "/logo.png",
@@ -193,6 +193,11 @@
   },
   "recentActivity": [
     {
+      "timestamp": "2026-04-22T13:28:47.422Z",
+      "action": "contact section updated",
+      "section": "contact"
+    },
+    {
       "timestamp": "2026-04-22T13:25:54.450Z",
       "action": "products section updated",
       "section": "products"
@@ -209,11 +214,6 @@
     },
     {
       "timestamp": "2026-04-21T13:30:19.824Z",
-      "action": "products section updated",
-      "section": "products"
-    },
-    {
-      "timestamp": "2026-04-20T12:48:41.289Z",
       "action": "products section updated",
       "section": "products"
     }
