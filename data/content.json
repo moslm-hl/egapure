@@ -82,27 +82,27 @@
   "stats": [
     {
       "value": "99.8%",
-      "label": "PorositÃ© de l'AÃ©rogel"
+      "label": "Porosité de l'Aérogel"
     },
     {
       "value": "0.015",
-      "label": "W/mÂ·K ConductivitÃ©"
+      "label": "W/m·K Conductivité"
     },
     {
-      "value": "18",
+      "value": "1",
       "label": "Pays Desservis"
     },
     {
-      "value": "500+",
-      "label": "Projets LivrÃ©s"
+      "value": "",
+      "label": "Projets Livrés"
     },
     {
-      "value": "10 ans",
+      "value": "1 ans",
       "label": "d'Expertise"
     },
     {
       "value": "3",
-      "label": "Brevets DÃ©posÃ©s"
+      "label": "Brevets Déposés"
     }
   ],
   "contact": {
@@ -193,6 +193,11 @@
   },
   "recentActivity": [
     {
+      "timestamp": "2026-04-22T13:32:27.245Z",
+      "action": "stats section updated",
+      "section": "stats"
+    },
+    {
       "timestamp": "2026-04-22T13:31:34.222Z",
       "action": "technology section updated",
       "section": "technology"
@@ -209,11 +214,6 @@
     },
     {
       "timestamp": "2026-04-22T13:28:53.518Z",
-      "action": "contact section updated",
-      "section": "contact"
-    },
-    {
-      "timestamp": "2026-04-22T13:28:47.422Z",
       "action": "contact section updated",
       "section": "contact"
     }
