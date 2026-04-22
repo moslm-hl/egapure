@@ -94,8 +94,8 @@
       "label": "Pays Desservis"
     },
     {
-      "value": "1",
-      "label": "Projets Livrés"
+      "value": "100X60",
+      "label": "18 DT"
     },
     {
       "value": "1 ans",
@@ -194,6 +194,11 @@
   },
   "recentActivity": [
     {
+      "timestamp": "2026-04-22T15:29:53.041Z",
+      "action": "stats section updated",
+      "section": "stats"
+    },
+    {
       "timestamp": "2026-04-22T15:28:55.457Z",
       "action": "about section updated",
       "section": "about"
@@ -210,11 +215,6 @@
     },
     {
       "timestamp": "2026-04-22T13:36:55.779Z",
-      "action": "stats section updated",
-      "section": "stats"
-    },
-    {
-      "timestamp": "2026-04-22T13:36:55.152Z",
       "action": "stats section updated",
       "section": "stats"
     }
