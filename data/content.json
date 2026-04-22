@@ -61,7 +61,7 @@
     "timeline": [
       {
         "year": "2025",
-        "event": "Expansion 18 pays"
+        "event": "EgaPanel Ultra"
       }
     ]
   },
@@ -193,6 +193,11 @@
   },
   "recentActivity": [
     {
+      "timestamp": "2026-04-22T13:30:53.623Z",
+      "action": "about section updated",
+      "section": "about"
+    },
+    {
       "timestamp": "2026-04-22T13:29:04.872Z",
       "action": "contact section updated",
       "section": "contact"
@@ -209,11 +214,6 @@
     },
     {
       "timestamp": "2026-04-22T13:25:54.450Z",
-      "action": "products section updated",
-      "section": "products"
-    },
-    {
-      "timestamp": "2026-04-21T13:31:16.626Z",
       "action": "products section updated",
       "section": "products"
     }
